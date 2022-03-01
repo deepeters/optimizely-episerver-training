@@ -24,6 +24,8 @@ namespace OptimizelyEpiserverTraining.Business.Initialization
             {
                 // Add content CSS to the default settings.
                 config.Default()
+                    .AddPlugin("code").AddPlugin("advlist")
+                    .AppendToolbar("code")
                     .ContentCss("/static/css/editor.css");
 
                 // This will clone the default settings object and extend it by
