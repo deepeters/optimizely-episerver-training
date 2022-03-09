@@ -22,8 +22,8 @@ namespace OptimizelyEpiserverTraining
             app.AddCmsAspNetIdentity<ApplicationUser>();
 
             // Remove to block registration of administrators
-            //app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
-            app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
+            app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
+            //app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
 
             // Use cookie authentication
             app.UseCookieAuthentication(new CookieAuthenticationOptions
