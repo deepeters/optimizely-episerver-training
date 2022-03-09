@@ -250,6 +250,7 @@
     <Compile Include="Business\ExtensionMethods\MiscExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
+    <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="SiteGroupNames.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -258,7 +259,6 @@
     <Compile Include="Models\Pages\StartPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Models\Blocks\" />
     <Folder Include="Models\Media\" />
     <Folder Include="Models\Properties\" />
@@ -267,6 +267,7 @@
   <ItemGroup>
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
+    <Content Include="Resources\LanguageFiles\ContentTypes.xml" />
     <Content Include="Static\css\bootstrap-collapse.js" />
     <Content Include="Static\css\bootstrap-responsive.css" />
     <Content Include="Static\css\bootstrap.css" />
@@ -317,6 +318,7 @@
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
     <None Include="packages.config" />
+    <Content Include="Views\StartPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
