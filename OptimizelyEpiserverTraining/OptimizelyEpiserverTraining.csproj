@@ -475,11 +475,11 @@
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\EPiServer.Marketing.Testing.zip" />
     <Content Include="modules\_protected\EPiServer.Forms.UI\module.config" />
     <Content Include="modules\_protected\EPiServer.Forms.UI\EPiServer.Forms.UI.zip" />
+    <Content Include="Features\ResetAdmin\ResetAdmin.cshtml" />
+    <Content Include="Features\Web.config" />
     <Content Include="modules\_protected\EPiServer.Forms\Views\ElementBlocks\Web.config" />
     <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <Content Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
-    <Content Include="Features\ResetAdmin\ResetAdmin.cshtml" />
-    <Content Include="Features\Web.config" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
