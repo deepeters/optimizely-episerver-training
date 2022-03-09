@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
+using OptimizelyEpiserverTraining.Features.ResetAdmin;
 
 [assembly: OwinStartup(typeof(OptimizelyEpiserverTraining.Startup))]
 
@@ -21,7 +22,8 @@ namespace OptimizelyEpiserverTraining
             app.AddCmsAspNetIdentity<ApplicationUser>();
 
             // Remove to block registration of administrators
-            app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
+            //app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
+            app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
 
             // Use cookie authentication
             app.UseCookieAuthentication(new CookieAuthenticationOptions
