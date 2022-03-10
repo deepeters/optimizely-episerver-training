@@ -251,6 +251,9 @@
     <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Business\Initialization\RegisterAdminInitializationModule.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
+    <Compile Include="Models\Media\AnyFile.cs" />
+    <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Media\SvgFile.cs" />
     <Compile Include="SiteGroupNames.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -260,7 +263,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />
-    <Folder Include="Models\Media\" />
     <Folder Include="Models\Properties\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
