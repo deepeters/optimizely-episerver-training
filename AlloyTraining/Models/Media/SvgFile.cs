@@ -18,4 +18,4 @@ namespace AlloyTraining.Models.Media
         // use the same binary vector image for thumbnail
         public override Blob Thumbnail { get => base.BinaryData; /*set => base.Thumbnail = value; */}
     }
-}
+} 

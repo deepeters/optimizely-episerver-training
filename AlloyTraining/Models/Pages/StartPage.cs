@@ -11,7 +11,8 @@ namespace AlloyTraining.Models.Pages
         GroupName = SiteGroupNames.Specialized, Order = 10,
         GUID = "cfb56fe8-8d63-4d5f-9b00-43667c91a485", 
         Description = "The home page for a website with an area of blocks and partial pages. ")]
-    public class StartPage : PageData
+    [SiteStartIcon]
+    public class StartPage : SitePageData
     {
 
         [CultureSpecific]
@@ -25,11 +26,11 @@ namespace AlloyTraining.Models.Pages
 
         [CultureSpecific]
         [Display(
-            Name = "Main body",
-            Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
-            GroupName = SystemTabNames.Content,
-            Order = 20)]
-        public virtual XhtmlString MainBody { get; set; }
+            Name = "Footer text",
+            Description = "This footer text will be shown at the bottom of every page.",
+            GroupName = SiteTabNames.SiteSettings,
+            Order = 10)]
+        public virtual string FooterText { get; set; }
 
     }
 }
