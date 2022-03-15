@@ -12,6 +12,9 @@ namespace AlloyTraining.Controllers
         {
             var viewmodel = new DefaultPageViewModel<ProductPage>(currentPage);
             return PartialView(viewmodel);
+
+            //return PartialView(DefaultPageViewModel.Create(currentPage));
+            //return PartialView(DefaultPageViewModel<ProductPage>.Create(currentPage));
         }
     }
 }
