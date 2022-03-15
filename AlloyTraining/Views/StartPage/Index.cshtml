@@ -1,6 +1,7 @@
 ﻿@using AlloyTraining.Models.ViewModels
 @using EPiServer.Core
 @using EPiServer.Web.Mvc.Html
+@using AlloyTraining.Models.Pages
 
 @model DefaultPageViewModel<AlloyTraining.Models.Pages.StartPage>
 
@@ -8,8 +9,8 @@
     @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
 </h1>
 @*<div>
-    @Html.PropertyFor(m => m.CurrentPage.MainBody)
-</div>*@
+        @Html.PropertyFor(m => m.CurrentPage.MainBody)
+    </div>*@
 <div>
     @Html.PropertyFor(m => m.CurrentPage.MainBody)
 </div>
