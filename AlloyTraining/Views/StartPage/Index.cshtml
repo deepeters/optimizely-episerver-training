@@ -6,11 +6,17 @@
 @model DefaultPageViewModel<AlloyTraining.Models.Pages.StartPage>
 
 <h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
-    @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
-</h1>
-@*<div>
+    @if (string.IsNullOrWhiteSpace(Model.CurrentPage.Heading))
+    {
+        @Html.EditAttributes(m => m.CurrentPage.Name)
+    }
+    else
+    {
+        @Html.EditAttributes(m => m.CurrentPage.Heading)
+    }
+    <div>
         @Html.PropertyFor(m => m.CurrentPage.MainBody)
-    </div>*@
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.MainBody)
-</div>
+    </div>
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.MainContentArea, new { CssClass = "row equal-height"})
+    </div>

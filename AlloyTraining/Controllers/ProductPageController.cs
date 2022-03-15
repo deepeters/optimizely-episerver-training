@@ -4,8 +4,7 @@ using System.Web.Mvc;
 
 namespace AlloyTraining.Controllers
 {
-    public class ProductPageController 
-        : PageControllerBase<ProductPage>
+    public class ProductPageController : PageControllerBase<ProductPage>
     {
         public ProductPageController(IContentLoader loader) : base(loader)
         {

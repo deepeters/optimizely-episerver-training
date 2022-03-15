@@ -40,5 +40,13 @@ namespace AlloyTraining.Models.Pages
             Order = 310)]
         public virtual XhtmlString MainBody { get; set; }
 
+        [CultureSpecific]
+        [Display(Name = "Main content area",
+            Description = "Drag and drop images, blocks, and pages with partial templates.",
+            GroupName = SystemTabNames.Content,
+            Order = 30)]
+        [AllowedTypes(typeof(StandardPage), typeof(BlockData), typeof(ImageData))]
+        public virtual ContentArea MainContentArea { get; set; }
+
     }
 }
